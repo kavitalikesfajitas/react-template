@@ -1,4 +1,4 @@
-webpack/node_modules/*
-webpack/.DS_Store
+client/node_modules/*
+client/.DS_Store
 .idea/*
-webpack/.idea/*
+client/.idea/*
