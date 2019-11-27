@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "eslint-config-airbnb-base",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-console": 0,
+    "no-shadow": 0,
+    "no-param-reassign": 0,
+    "comma-dangle": 0,
+    "max-len": [
+      "error",
+      {
+        "code": 300
+      }
+    ],
+    "object-curly-newline": 0,
+    "array-callback-return": 0,
+    "class-methods-use-this": "off",
+    "no-alert": "off",
+    "prefer-rest-params": 1,
+    "prefer-destructuring": 1,
+    "no-unused-vars": 1,
+    "quote-props": 1,
+    "no-use-before-define": 1,
+    "import/prefer-default-export": 0,
+    "guard-for-in": 1,
+    "no-restricted-syntax": 1,
+    "arrow-body-style": 0,
+    "global-require": 0,
+    "react/prop-types": "warn"
+  },
+  "globals": {
+    "cy": true,
+    "LauncherEventInterface": true,
+    "SessionStartBroadcastJavaInterface": true,
+    "WebphoneJavascriptInterface": true,
+    "ConfigPropertyJavaInterface": true
+  }
+}
