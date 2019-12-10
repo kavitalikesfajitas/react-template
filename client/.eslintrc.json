@@ -3,45 +3,44 @@
     "eslint-config-airbnb-base",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "prettier"
   ],
+  "plugins": ["prettier"],
   "env": {
-    "es6": true,
-    "browser": true,
-    "mocha": true
+    "es6": true
   },
   "rules": {
+    "react/prop-types": 1,
+    "import/imports-first": ["error", "absolute-first"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "camelcase": "warn",
+    "no-unused-vars": "warn",
+    "jsx-quotes": ["error", "prefer-double"],
+    "import/prefer-default-export": 0,
+    "import/newline-after-import": "error",
+    "import/no-named-as-default": "off",
     "no-console": 0,
+    "prefer-destructuring": 0,
     "no-shadow": 0,
-    "no-param-reassign": 0,
     "comma-dangle": 0,
     "max-len": [
       "error",
       {
-        "code": 300
+        "code": 200
       }
     ],
     "object-curly-newline": 0,
     "array-callback-return": 0,
     "class-methods-use-this": "off",
     "no-alert": "off",
-    "prefer-rest-params": 1,
-    "prefer-destructuring": 1,
-    "no-unused-vars": 1,
-    "quote-props": 1,
-    "no-use-before-define": 1,
-    "import/prefer-default-export": 0,
-    "guard-for-in": 1,
-    "no-restricted-syntax": 1,
-    "arrow-body-style": 0,
-    "global-require": 0,
-    "react/prop-types": "warn"
+    "semi": "error"
   },
-  "globals": {
-    "cy": true,
-    "LauncherEventInterface": true,
-    "SessionStartBroadcastJavaInterface": true,
-    "WebphoneJavascriptInterface": true,
-    "ConfigPropertyJavaInterface": true
-  }
+  "parser": "babel-eslint"
 }
