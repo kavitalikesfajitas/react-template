@@ -71,12 +71,13 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "pretty-quick --staged",
-      "eslint src/component --fix",
+      "eslint boilerplate/src/ --fix",
       "git add"
     ]
   },
   "dependencies": {
     "axios": "^0.19.0",
+    "babel-eslint": "^10.0.3",
     "body-parser": "^1.18.3",
     "concurrently": "^4.1.0",
     "cookie-parser": "^1.4.3",
