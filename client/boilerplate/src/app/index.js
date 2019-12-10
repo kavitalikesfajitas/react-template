@@ -5,5 +5,5 @@ const App = () => {
   return <div>Hello</div>;
 };
 
-// eslint-disable-next-line  no-undef
+// eslint-disable-next-line no-undef
 render(<App />, document.getElementById('root'));

@@ -1,19 +1,19 @@
 {
   "name": "app",
+  "description": "React Boiler template with eslint and husky hook",
   "private": true,
+  "homepage": "livingkavitaloca.com",
+  "author": "Kavita Chaudhry <kchaudh312@gmail.com>",
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.js --define process.env.NODE_ENV='\"development\"'",
     "build": "webpack --config webpack.config.js",
-    "start": "concurrently \"npm run build\" \"npm run server\"",
     "lint": "eslint boilerplate",
-    "server": "nodemon app.js",
     "clean": "rm -rf node_modules",
     "reinstall": "npm run clean && npm install"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
-    "@babel/node": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/plugin-proposal-do-expressions": "^7.0.0",
@@ -88,7 +88,6 @@
     "html-webpack-template": "^6.2.0",
     "lodash": "^4.17.15",
     "node-sass": "^4.12.0",
-    "nodemon": "^1.19.1",
     "prop-types": "^15.7.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
